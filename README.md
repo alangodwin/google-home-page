@@ -1,0 +1,1 @@
+A static web page clone of the google homepage.
