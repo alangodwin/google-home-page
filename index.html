@@ -14,39 +14,39 @@
        grid-template-columns: 1fr 1fr;
        grid-template-rows: auto auto auto auto auto;
        grid-template-areas:
-       "a a"
-       "e e "
-       "d d"
-       "b c"
-       "f f";
+       "header header"
+       "logo logo"
+       "search search"
+       "button1 button2"
+       "footer footer";
    }
    .header {
        justify-self: end;
-       grid-area: a;
+       grid-area: header;
    }
    .button1 {
-       grid-area: b;
+       grid-area: button1;
        margin-right: 5em ;
        justify-self: end;
    }
    .button2 {
-       grid-area: c;
+       grid-area: button2;
        margin-left: 5em ;
        justify-self: start;
    }
    .search {
-        grid-area: d;
+        grid-area: search;
         justify-self: center
 
    }
     .logo {
-        grid-area: e;
+        grid-area: logo;
         justify-self: center;
 
     }
 
    .footer {
-        grid-area: f;
+        grid-area: footer;
     
    }
 </style>
