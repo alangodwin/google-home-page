@@ -14,7 +14,10 @@
 
    .grid-container {
        display: grid;
-       grid-template-columns: auto auto;
+       height: auto;
+       width: auto;
+       grid-gap: 1em;
+       grid-template-columns: 1fr 1fr;
        grid-template-rows: auto auto auto auto auto;
        grid-template-areas:
        "header header"
@@ -27,18 +30,20 @@
        align-items: stretch;
    }
    .button1 {
+       margin-right: 5em ;
        justify-self: end;
    }
    .button2 {
+       margin-left: 5em ;
        justify-self: start;
    }
    .search {
-    justify-self: center;
-       width: 60%;
+        justify-self: center
+        /*width: 100%; */
 
    }
     .logo {
-
+        justify-self: center;
 
     }
 
