@@ -2,38 +2,43 @@
 
 
 <html>
+
 <style>
-    input[type=search] {
-        width: 75%;
-        margin-top: 50%;
-        margin-left: 10%;
-    }
+   .grid-container {
+       display: grid;
+       grid-gap: 50px 50px;
+
+   }
 </style>
 
-<Header>
-    <a href="">About</a>
-    <a href="">Store</a>
-    <a href="">Gmail</a>
-    <a href="">Images</a>
-</Header>
-<body>
+<div class="grid-container">
+       
+    <Header>
+        <a href="">About</a>
+        <a href="">Store</a>
+        <a href="">Gmail</a>
+        <a href="">Images</a>
+        <input type="button" value="Sign in">
+    </Header>
+    <body>
 
 
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-<form>
-   <input type="search" id="search-bar" name="search-bar">
-   <input type="button" value="Google Search">
-   <input type="button" value="I'm Feeling Lucky">
-</form>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    <form>
+    <div class="search"><input type="search" id="search-bar" name="search-bar"></div>
+    <div class="button1"><input type="button" value="Google Search"></div>
+    <div class="button2"><input type="button" value="I'm Feeling Lucky"></div>
+    </form>
 
-<footer>
-    <a href="">Advertising</a>
-    <a href="">Buisness</a>
-    <a href="">How Search Works</a>
-    <a href="">Privacy</a>
-    <a href="">Terms</a>
-    <a href="">Settings</a>
-</footer>
+    <footer>
+        <a href="">Advertising</a>
+        <a href="">Buisness</a>
+        <a href="">How Search Works</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Settings</a>
+    </footer>
 
-</body>
+    </body>
+</div>
 </html>
