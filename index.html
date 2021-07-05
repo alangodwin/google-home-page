@@ -5,7 +5,7 @@
 
 <style>
 
-.Header { grid-area: header; }
+.header { grid-area: header; }
 .logo { grid-area: logo; }
 .search { grid-area: search; }
 .button1 { grid-area: button1; }
@@ -14,10 +14,9 @@
 
    .grid-container {
        display: grid;
-       grid-gap: auto
-    ;
+       grid-gap: auto;
        grid-template-areas:
-       "Header Header"
+       "header header"
        "logo logo"
        "search search"
        "button1 button2"
@@ -28,13 +27,13 @@
 
 <div class="grid-container">
        
-    <Header>
+    <header>
         <a href="">About</a>
         <a href="">Store</a>
         <a href="">Gmail</a>
         <a href="">Images</a>
         <input type="button" value="Sign in">
-    </Header>
+    </header>
     <body>
 
 
@@ -42,14 +41,14 @@
     <div class="search"><input type="search" id="search-bar" name="search-bar"></div>
     <div class="button1"><input type="button" value="Google Search"></div>
     <div class="button2"><input type="button" value="I'm Feeling Lucky"></div>
-    <footer>
+    <div class="footer"><footer>
         <a href="">Advertising</a>
         <a href="">Buisness</a>
         <a href="">How Search Works</a>
         <a href="">Privacy</a>
         <a href="">Terms</a>
         <a href="">Settings</a>
-    </footer>
+    </footer></div>
 
     </body>
 </div>
