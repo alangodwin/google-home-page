@@ -4,9 +4,24 @@
 <html>
 
 <style>
+
+.Header { grid-area: header; }
+.logo { grid-area: logo; }
+.search { grid-area: search; }
+.button1 { grid-area: button1; }
+.button2 { grid-area: button2; }
+.footer { grid-area: footer; }
+
    .grid-container {
        display: grid;
-       grid-gap: 50px 50px;
+       grid-gap: auto
+    ;
+       grid-template-areas:
+       "Header Header"
+       "logo logo"
+       "search search"
+       "button1 button2"
+       "footer footer";
 
    }
 </style>
@@ -23,13 +38,10 @@
     <body>
 
 
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-    <form>
+    <div class="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"></div>
     <div class="search"><input type="search" id="search-bar" name="search-bar"></div>
     <div class="button1"><input type="button" value="Google Search"></div>
     <div class="button2"><input type="button" value="I'm Feeling Lucky"></div>
-    </form>
-
     <footer>
         <a href="">Advertising</a>
         <a href="">Buisness</a>
