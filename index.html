@@ -14,13 +14,35 @@
 
    .grid-container {
        display: grid;
-       grid-gap: auto;
+       grid-template-columns: auto auto;
+       grid-template-rows: auto auto auto auto auto;
        grid-template-areas:
        "header header"
        "logo logo"
        "search search"
        "button1 button2"
        "footer footer";
+   }
+   .header {
+       align-items: stretch;
+   }
+   .button1 {
+       justify-self: end;
+   }
+   .button2 {
+       justify-self: start;
+   }
+   .search {
+    justify-self: center;
+       width: 60%;
+
+   }
+    .logo {
+
+
+    }
+
+   .footer {
 
    }
 </style>
