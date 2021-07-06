@@ -11,6 +11,8 @@
       flex-direction: column;
       align-items: center; 
       gap: 50px;
+      width: 100%;
+      height: 100%;
       
     }
    .button-container {
@@ -35,20 +37,31 @@
     }
     .footer {
         display:flex ;
+        width: auto;
+        align-self: flex-start;
         flex-direction: row; 
-        width: 1000px;
+        gap: 10px;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-self: end;
+
+    }
  
 </style>
 
 <div class="flex-container">
        
-    <div class="header"><header>
-        <a href="">About</a>
-        <a href="">Store</a>
-        <a href="">Gmail</a>
-        <a href="">Images</a>
-        <input type="button" value="Sign in">
-    </header></div>
+    <div class="header">
+        <div><a href="">About</a></div>
+        <div><a href="">Store</a></div>
+        <div><a href="">Gmail</a></div>
+        <div><a href="">Images</a></div>
+        <div><input type="button" value="Sign in"></div>
+    </div>
     <body>
 
 
@@ -58,14 +71,14 @@
         <div class="button1"><input type="button" value="Google Search"></div>
         <div class="button2"><input type="button" value="I'm Feeling Lucky"></div>
     </div>
-    <div class="footer"><footer>
+    <div class="footer">
         <div><a href="">Advertising</a></div>
         <div><a href="">Buisness</a></div>
         <div><a href="">How Search Works</a></div>
         <div><a href="">Privacy</a></div>
         <div><a href="">Terms</a></div>
         <div><a href="">Settings</a></div>
-    </footer></div>
+    </div>
 
     </body>
 </div>
