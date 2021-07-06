@@ -10,6 +10,7 @@
       flex: auto;
       flex-direction: column;
       align-items: center; 
+      gap: 50px;
       
     }
    .button-container {
@@ -21,17 +22,22 @@
    .search {
     display:flex ;
     align-items: center;
-    width: 800px;
+    width: 600px;
+    height: 50px
        
     }
     #search-bar {
         display: flex;
         align-items: center;
-        flex-basis: 800px;
+        flex-basis: 600px;
+        height: 50px;
+        border-radius: 25px;
     }
     .footer {
-        justify-items: flex-end;
-    }
+        display:flex ;
+        flex-direction: row; 
+        width: 1000px;
+ 
 </style>
 
 <div class="flex-container">
@@ -53,12 +59,12 @@
         <div class="button2"><input type="button" value="I'm Feeling Lucky"></div>
     </div>
     <div class="footer"><footer>
-        <a href="">Advertising</a>
-        <a href="">Buisness</a>
-        <a href="">How Search Works</a>
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Settings</a>
+        <div><a href="">Advertising</a></div>
+        <div><a href="">Buisness</a></div>
+        <div><a href="">How Search Works</a></div>
+        <div><a href="">Privacy</a></div>
+        <div><a href="">Terms</a></div>
+        <div><a href="">Settings</a></div>
     </footer></div>
 
     </body>
